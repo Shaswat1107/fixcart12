@@ -23,7 +23,7 @@
   <main>
     <section id="cost-info">
       <h2>Electrician Cost Information</h2>
-      <p>The cost for electrician services is Rs. 25 per minute, excluding taxes and any new installed products.</p>
+      <p>The cost for electrician services is Rs. 36 per minute, excluding taxes and any new installed products.</p>
       <p>For more details, please contact us.</p>
       <a href="index.html#contact" class="cta-button">Contact Us</a>
     </section>
@@ -56,13 +56,19 @@
           <td><button class="availability-button">Available</button></td>
         </tr>
       </table>
+    
+      <button class="book-button" onclick="redirectToPayment()">Book Electrician</button>
     </section>
-      </main>
+  </main>
 
   <footer>
     <p>&copy; 2024 FixCart. All rights reserved.</p>
   </footer>
 
-  <script src="scripts.js"></script>
+  <script>
+    function redirectToPayment() {
+      window.location.href = 'payment-gateway.html';
+    }
+  </script>
 </body>
 </html>

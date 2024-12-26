@@ -58,18 +58,7 @@
 
   <script>
     function redirectToPayment() {
-      const form = document.createElement('form');
-      form.method = 'POST';
-      form.action = 'payment-gateway.html';
-
-      const amountField = document.createElement('input');
-      amountField.type = 'hidden';
-      amountField.name = 'amount';
-      amountField.value = '25';
-      form.appendChild(amountField);
-
-      document.body.appendChild(form);
-      form.submit();
+      window.location.href = 'payment-gateway.html';
     }
   </script>
 </body>
