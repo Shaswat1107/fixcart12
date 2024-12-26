@@ -41,7 +41,7 @@ nav ul li a {
 
 #hero {
   color: white;
-  padding: 70px 40px;
+  padding: 90px 40px;
   text-align: center;
   background-size: cover;
   background-position: center;
@@ -63,7 +63,8 @@ nav ul li a {
   color: white;
   text-decoration: none;
   border-radius: 5px;
-  margin-top: 70px; /* Add margin to move the button down */
+  margin-top: 20px; /* Add margin to move the button down */
+  display: inline-block;
 }
 
 #services {
@@ -107,6 +108,7 @@ nav ul li a {
 
 .service p {
   color: #555; /* Add color to the service description */
+  margin-bottom: 20px; /* Add margin to separate from the button */
 }
 
 .service a {
@@ -135,11 +137,25 @@ form {
   margin-top: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 label {
   display: block;
   margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
 }
 
 input, select, button {
@@ -148,16 +164,24 @@ input, select, button {
   margin-bottom: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, select:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
 }
 
 button {
   background-color: #e74c3c;
   color: white;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 button:hover {
   background-color: #c0392b;
+  transform: scale(1.05);
 }
 
 .whatsapp-button {
@@ -207,6 +231,79 @@ button:hover {
 }
 
 #cost-info p {
+  margin-bottom: 20px;
+}
+
+/* Plumber availability table styles */
+#plumber-availability {
+  padding: 50px;
+  text-align: center;
+}
+
+#plumber-availability table {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+#plumber-availability th, #plumber-availability td {
+  padding: 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.availability-button {
+  background-color: #2ecc71;
+  color: white;
+  padding: 10px 20px;
+  border: rebeccapurple;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.availability-button:hover {
+  background-color: #27ae60;
+  transform: scale(1.1);
+}
+
+/* About Us section styles */
+#about {
+  padding: 50px;
+  text-align: center;
+  background-color: #f9f9f9;
+  animation: fadeIn 1s ease-in-out;
+}
+
+#about h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #3498db;
+}
+
+#about p {
+  font-size: 1.2em;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+#about .about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#about .about-content p {
+  margin-bottom: 20px;
+}
+
+#about .about-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
 }
 
