@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FixCart - Payment Gateway">
+  <title>FixCart - Payment Gateway</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="6666f19a-5b13-4b01-8b90-e3f5c763ce26 (1).jpg" alt="FixCart Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="payment-info">
+      <h2>Payment Gateway</h2>
+      <p>Please deposit a minimum of Rs. 25 to book the plumbing service.</p>
+      <form action="/process-payment" method="POST">
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" value="25" readonly>
+        
+        <label for="name">Plumber Name:</label>
+        <input type="text" id="name" name="name" readonly>
+
+        <button type="submit" class="cta-button">Proceed to Pay</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 FixCart. All rights reserved.</p>
+  </footer>
+  </main>
+    <footer>
+        <p>&copy; 2024 FixCart. All rights reserved.</p>
+</body>
+</html>

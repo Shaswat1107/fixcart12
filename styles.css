@@ -41,7 +41,7 @@ nav ul li a {
 
 #hero {
   color: white;
-  padding: 90px 40px;
+  padding: 70px 40px;
   text-align: center;
   background-size: cover;
   background-position: center;
@@ -63,8 +63,7 @@ nav ul li a {
   color: white;
   text-decoration: none;
   border-radius: 5px;
-  margin-top: 20px; /* Add margin to move the button down */
-  display: inline-block;
+  margin-top: 70px; /* Add margin to move the button down */
 }
 
 #services {
@@ -234,30 +233,44 @@ button:hover {
   margin-bottom: 20px;
 }
 
-/* Plumber availability table styles */
-#plumber-availability {
+/* Mechanic availability table styles */
+#mechanic-availability {
   padding: 50px;
   text-align: center;
+  animation: fadeIn 1s ease-in-out;
 }
 
-#plumber-availability table {
+#mechanic-availability table {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
   border-collapse: collapse;
+  animation: slideIn 1s ease-in-out;
 }
 
-#plumber-availability th, #plumber-availability td {
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+#mechanic-availability th, #mechanic-availability td {
   padding: 15px;
   border: 1px solid #ddd;
   text-align: center;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .availability-button {
   background-color: #2ecc71;
   color: white;
   padding: 10px 20px;
-  border: rebeccapurple;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
