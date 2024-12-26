@@ -36,29 +36,20 @@
           <th>Availability</th>
         </tr>
         <tr>
-          <td>Rajesh Kumar</td>
-          <td><button class="availability-button" onclick="redirectToPayment('Rajesh Kumar')">Book Now</button></td>
+          <td class="plumber-name">Rajesh Kumar</td>
+          <td>Available</td>
         </tr>
         <tr>
-          <td>Sunil Sharma</td>
-          <td><button class="availability-button" onclick="redirectToPayment('Sunil Sharma')">Book Now</button></td>
+          <td class="plumber-name">Sunil Sharma</td>
+          <td>Available</td>
         </tr>
         <tr>
-          <td>Amit Singh</td>
-          <td><button class="availability-button" onclick="redirectToPayment('Amit Singh')">Book Now</button></td>
-        </tr>
-        <tr>
-          <td>Vijay Patel</td>
-          <td><button class="availability-button" onclick="redirectToPayment('Vijay Patel')">Book Now</button></td>
-        </tr>
-        <tr>
-          <td>Ravi Verma</td>
-          <td><button class="availability-button" onclick="redirectToPayment('Ravi Verma')">Book Now</button></td>
+          <td class="plumber-name">Amit Singh</td>
+          <td>Available</td>
         </tr>
       </table>
+      <button class="book-button" onclick="redirectToPayment()">Book Plumber</button>
     </section>
-
-    <a href="payment-gateway.html" class="button">Click to Proceed</a>
   </main>
 
   <footer>
@@ -66,16 +57,10 @@
   </footer>
 
   <script>
-    function redirectToPayment(plumberName) {
+    function redirectToPayment() {
       const form = document.createElement('form');
       form.method = 'POST';
       form.action = 'payment-gateway.html';
-
-      const nameField = document.createElement('input');
-      nameField.type = 'hidden';
-      nameField.name = 'name';
-      nameField.value = plumberName;
-      form.appendChild(nameField);
 
       const amountField = document.createElement('input');
       amountField.type = 'hidden';

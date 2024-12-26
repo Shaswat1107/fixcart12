@@ -23,47 +23,54 @@
   <main>
     <section id="cost-info">
       <h2>Mechanic Cost Information</h2>
-      <p>The cost for mechanic services is Rs. 45 per minute, excluding taxes and any new installed products.</p>
+      <p>The cost for mechanic services is Rs. 55 per minute, excluding taxes and any new installed products.</p>
       <p>For more details, please contact us.</p>
       <a href="index.html#contact" class="cta-button">Contact Us</a>
     </section>
 
     <section id="mechanic-availability">
-      <h2>Available Plumbers</h2>
+      <h2>Available Mechanics</h2>
       <table>
         <tr>
           <th>Name</th>
           <th>Availability</th>
         </tr>
         <tr>
-          <td>Rajesh Kumar</td>
-          <td><button class="availability-button">Available</button></td>
+          <td class="mechanic-name">Rajesh Kumar</td>
+          <td>Available</td>
         </tr>
         <tr>
-          <td>Sunil Sharma</td>
-          <td><button class="availability-button">Available</button></td>
+          <td class="mechanic-name">Sunil Sharma</td>
+          <td>Available</td>
         </tr>
         <tr>
-          <td>Amit Singh</td>
-          <td><button class="availability-button">Available</button></td>
-        </tr>
-        <tr>
-          <td>Vijay Patel</td>
-          <td><button class="availability-button">Available</button></td>
-        </tr>
-        <tr>
-          <td>Ravi Verma</td>
-          <td><button class="availability-button">Available</button></td>
+          <td class="mechanic-name">Amit Singh</td>
+          <td>Available</td>
         </tr>
       </table>
+      <button class="book-button" onclick="redirectToPayment()">Book Mechanic</button>
     </section>
-    <a href="payment-gateway.html" class="button">Click to Proceed</a>
   </main>
 
   <footer>
     <p>&copy; 2024 FixCart. All rights reserved.</p>
   </footer>
 
-  <script src="scripts.js"></script>
+  <script>
+    function redirectToPayment() {
+      const form = document.createElement('form');
+      form.method = 'POST';
+      form.action = 'payment-gateway.html';
+
+      const amountField = document.createElement('input');
+      amountField.type = 'hidden';
+      amountField.name = 'amount';
+      amountField.value = '55';
+      form.appendChild(amountField);
+
+      document.body.appendChild(form);
+      form.submit();
+    }
+  </script>
 </body>
 </html>
