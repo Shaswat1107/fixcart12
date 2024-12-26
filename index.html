@@ -1,236 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Apna Dukan - Book Plumbers, Electricians, Mechanics, and other services online.">
-        <meta name="keywords" content="Book Plumbers Online, Hire Local Electricians, Affordable Mechanics Near Me">
-        <meta name="author" content="Apna Dukan">
-        <title>FixCart - Your One-Stop Shop for Home Services</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <style>
-            /* General Styles */
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-            }
-    
-            .whatsapp-button {
-                position: fixed;
-                bottom: 20px;
-                right: 20px;
-                z-index: 1000;
-                background-color: #25D366;
-                border-radius: 50%;
-                padding: 10px;
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            }
-    
-            .whatsapp-button img {
-                width: 50px;
-                height: 50px;
-            }
-    
-            .hero {
-                position: relative;
-                height: 40vh;
-                background-size: cover;
-                background-position: center;
-                animation: slide 15s infinite;
-                text-align: center;
-                padding: 20px;
-            }
-    
-            .hero h1 {
-                color: rgb(255, 0, 0);
-                font-size: 24px;
-            }
-    
-            .hero p {
-                color: rgb(0, 255, 0);
-                font-size: 18px;
-            }
-    
-            .hero .cta-button {
-                color: rgb(0, 0, 255);
-                background-color: #FF6600;
-                padding: 10px 20px;
-                text-decoration: none;
-                border-radius: 5px;
-                display: inline-block;
-                margin-top: 10px;
-            }
-    
-            /* Media Queries for Android Screens */
-            @media (max-width: 600px) {
-                .hero h1 {
-                    font-size: 20px;
-                }
-    
-                .hero p {
-                    font-size: 16px;
-                }
-    
-                .hero .cta-button {
-                    padding: 8px 16px;
-                    font-size: 14px;
-                }
-    
-                .nav-links {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                }
-    
-                .nav-links li {
-                    margin: 10px 0;
-                }
-    
-                .cta-buttons {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                }
-    
-                .cta-buttons .button {
-                    margin: 10px 0;
-                }
-            }
-        </style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FixCart - Household Services at Your Doorstep">
+  <title>FixCart - Household Services</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- WhatsApp Button -->
-    <a href="https://wa.me/918935896217" target="_blank" class="whatsapp-button">
-        <img src="rb_2147900927-removebg-preview.png" alt="Chat with us on WhatsApp" />
-    </a>
-
-    <!-- Navigation Bar -->
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="6666f19a-5b13-4b01-8b90-e3f5c763ce26 (1).jpg" alt="Apna Dukan Logo">
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="https://fixcart121.blogspot.com/2024/12/fixcart.html"target="_blank">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="cta-buttons">
-                <a href="signup.html" class="button">Sign Up</a>
-                <a href="signup.html" class="button">Login</a>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 style="color: rgb(blue,brown, black, yellow);">Your One-Stop Shop for All Home and Professional Services!</h1>
-        <p style="color: rgb(0, 200, 255);">Book trusted professionals for your home and office needs.</p>
-            <a href="#services" class="cta-button">Browse Categories</a>
-        </div>
+  <header>
+    <div class="logo">
+      <img src="6666f19a-5b13-4b01-8b90-e3f5c763ce26 (1).jpg" alt="FixCart Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://fixcart121.blogspot.com/2024/12/fixcart.html"target="_blank">Blog</a></li>
+      </ul>
+      <div class="cta-buttons">
+        <a href="signup.html" class="button">Sign Up</a>
+        <a href="signup.html" class="button">Login</a>
+    </div>
+    </nav>
+  </header>
+  <main>
+    <section id="hero">
+      <div class="hero-content">
+        <h2>Household Services at Your Fingertips</h2>
+        <p>Book reliable and affordable home services.</p>
+        <a href="#services" class="cta-button">Browse Services</a>
+      </div>
     </section>
 
-    <!-- Service Categories Section -->
-    <section id="services" class="service-categories">
-        <h2>Our Services</h2>
-        <div class="service-list">
-            <div class="service-item">
-                <img src="https://www.shutterstock.com/shutterstock/photos/2426451109/display_1500/stock-vector-cartoon-kid-plumber-holding-a-big-key-and-giving-thumb-2426451109.jpg" alt="Plumber">
-                <h3>Plumbers</h3>
-                <p>Get your plumbing needs fixed in no time!</p>
-                <a href="plumbers.html" class="service-btn">Book a Plumber</a>
-            </div>
-            <div class="service-item">
-                <img src="https://www.shutterstock.com/shutterstock/photos/1924190375/display_1500/stock-vector-working-electrician-with-tools-wires-tester-in-hands-vector-illustration-in-flat-cartoon-style-1924190375.jpg" alt="Electrician">
-                <h3>Electricians</h3>
-                <p>Hire certified electricians for home repairs.</p>
-                <a href="electricians.html" class="service-btn">Book an Electrician</a>
-            </div>
-            <div class="service-item">
-                <img src="https://www.shutterstock.com/shutterstock/photos/2390165555/display_1500/stock-vector-mechanic-man-mascot-logo-design-cartoon-car-mechanic-worker-mascot-vector-clipart-image-of-a-male-2390165555.jpg" alt="Mechanic">
-                <h3>Mechanics</h3>
-                <p>Reliable car repair services, right at your doorstep.</p>
-                <a href="mechanics.html" class="service-btn">Book a Mechanic</a>
-            </div>
-            <div class="service-item">
-                <img src="https://www.shutterstock.com/shutterstock/photos/2473996033/display_1500/stock-vector-chef-with-tray-of-food-in-hand-emblem-cooking-logo-vector-illustration-for-cafe-or-restaurant-menu-2473996033.jpg" alt="Chef">
-                <h3>Chefs</h3>
-                <p>Book a personal chef for your home parties.</p>
-                <a href="chefs.html" class="service-btn">Book a Chef</a>
-            </div>
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="service-list">
+        <div class="service">
+          <img src="plumber.png" alt="Plumbing Logo" class="service-logo">
+          <h3>Plumbing</h3>
+          <p>Fix leaks, clogged drains, and more.</p>
+          <a href="plumbing.html">Book Now</a>
         </div>
+        <div class="service">
+          <img src="chef.png" alt="Chef Logo" class="service-logo">
+          <h3>Chef</h3>
+          <p>All types of prep foods.</p>
+          <a href="chef.html">Book Now</a>
+        </div>
+        <div class="service">
+          <img src="electrician.png" alt="Electrical Logo" class="service-logo">
+          <h3>Electrical</h3>
+          <p>Fix electrical issues and installations.</p>
+          <a href="electrician.html">Book Now</a>
+        </div>
+        <div class="service">
+          <img src="mechanic.png" alt="Mechanic Logo" class="service-logo">
+          <h3>Mechanic</h3>
+          <p>Fix mechanical issues and installations.</p>
+          <a href="mechanic.html">Book Now</a>
+        </div>
+        <!-- Add more services as needed -->
+      </div>
     </section>
 
-    <!-- How It Works Section -->
-    <section id="how-it-works" class="how-it-works">
-        <h2>How It Works</h2>
-        <div class="steps">
-            <div class="step">
-                <h3>Step 1</h3>
-                <p>Search for the service you need.</p>
-            </div>
-            <div class="step">
-                <h3>Step 2</h3>
-                <p>Choose a trusted professional.</p>
-            </div>
-            <div class="step">
-                <h3>Step 3</h3>
-                <p>Book and relax while we take care of the rest.</p>
-            </div>
-        </div>
+    <section id="book">
+      <h2>Book a Service</h2>
+      <form action="/submit" method="POST">
+        <label for="service">Choose Service:</label>
+        <select id="service" name="service">
+          <option value="plumbing">Plumbing</option>
+          <option value="cleaning">Chef</option>
+          <option value="electrical">Electrical</option>
+          <option value="electrical">Mechanic</option>
+        </select>
+
+        <label for="time">Preferred Time:</label>
+        <input type="datetime-local" id="time" name="time">
+
+        <button type="submit">Book Now</button>
+      </form>
     </section>
 
-    <!-- Booking Form -->
-    <section id="booking" class="booking">
-        <h2>Book a Service Now</h2>
-        <form id="bookingForm">
-            <label for="service">Choose a Service:</label>
-            <select id="service" name="service" required>
-                <option value="plumber">Plumber</option>
-                <option value="electrician">Electrician</option>
-                <option value="mechanic">Mechanic</option>
-                <option value="chef">Chef</option>
-            </select>
-
-            <label for="professional">Choose a Professional:</label>
-            <select id="professional" name="professional" required>
-                <option value="john">John - Plumber</option>
-                <option value="paul">Paul - Electrician</option>
-                <option value="sam">Sam - Mechanic</option>
-                <option value="raj">Raj - Chef</option>
-            </select>
-
-            <label for="date">Choose Date and Time:</label>
-            <input type="datetime-local" id="date" name="date" required>
-
-            <button type="submit" class="cta-button">Book Now</button>
-        </form>
-        <div id="confirmationMessage" class="confirmation"></div>
+    <section id="about">
+      <h2>About FixCart</h2>
+      <p>FixCart is your go-to platform for all household services. From plumbing to cleaning, we connect you with professionals you can trust.</p>
     </section>
 
-    <!-- Footer Section -->
-    <footer id="contact">
-        <div class="footer-content">
-            <div class="footer-links">
-                <h4>Useful Links</h4>
-                <ul>
-                    <li><a href="#terms">Terms & Conditions</a></li>
-                    <li><a href="#privacy">Privacy Policy</a></li>
-                </ul>
-            </div>
-            <div class="footer-contact">
-                <h4>Contact Us</h4>
-                <p>Email: support@apnadukan.com</p>
-                <p>Phone: +918935896217, +916201882484</p>
-            </div>
-        </div>
-    </footer>
+    <section id="faq">
+      <h2>Frequently Asked Questions</h2>
+      <ul>
+        <li><strong>How can I book a service?</strong> Simply select a service from the list and follow the instructions.</li>
+        <li><strong>Are your professionals reliable?</strong> Yes, we vet all of our service providers thoroughly.</li>
+        <li><strong>Do you offer payment options?</strong> Yes, we support credit/debit card payments and mobile wallets.</li>
+      </ul>
+    </section>
 
-    <script src="scripts.js"></script>
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>For more information, reach out to us via:</p>
+      <p>Email: support@fixcart.com</p>
+      <p>Phone: +91 6201882484</p>
+      <a href="https://wa.me/916201882484" class="whatsapp-button">Contact us on WhatsApp</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 FixCart. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FixCart - Plumbing Service Booking">
+  <title>FixCart - Plumbing Service Booking</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="6666f19a-5b13-4b01-8b90-e3f5c763ce26 (1).jpg" alt="FixCart Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="booking-form">
+      <h2>Book mechanic Service</h2>
+      <form action="/submit-plumbing" method="POST" class="animated-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="service">Service:</label>
+        <input type="text" id="service" name="service" value="Mechanic" readonly>
+
+        <label for="date">Preferred Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <a href="mechanic-cost.html" class="button">Book Now</a>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 FixCart. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
