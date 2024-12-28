@@ -1059,3 +1059,23 @@ nav ul li select:hover {
   from {transform: translateY(-50px);}
   to {transform: translateY(0);}
 }
+/* Add this to your existing styles.css file */
+
+.need-help-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #3498db;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.need-help-button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
